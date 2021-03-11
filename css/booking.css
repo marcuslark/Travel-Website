@@ -112,13 +112,13 @@ header .toggle.active {
     list-style: none;
 
 }
-.navigation ul li a {
+.navigation ul a {
     display: inline-block;
     color: #000;
     font-size: 2em;
     text-decoration: none;
     font-weight: 100;
 }
-.navigation ul li a:hover {
+.navigation ul a:hover {
     color: rgba(0, 153, 255, 0.349)
 }
