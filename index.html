@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exotic Travel Destinations Design</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Travel</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+        <div class="content">
+            <h2>Book your<br>trip now!</h2>
+        </div>
+        <ul class="media">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+        </ul>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const menyToggle = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation');
+            menyToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

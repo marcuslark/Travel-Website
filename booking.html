@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Site</title>
+    <link rel="stylesheet" type="text/css" href="css/booking.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Travel</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+        <ul class="media">
+            <li><a href="#"><img src="img/blackfacebook.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/blacktwitter.png"></a></li>
+        </ul>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const menyToggle = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation');
+            menyToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
