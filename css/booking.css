@@ -6,11 +6,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+main ul {
+    list-style-type: none;
+}
 .grid-container{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 35vh;
-    grid-gap: 50px;
+    grid-template-rows: 20vh;
+    grid-gap: 220px;
     text-align: center;
 }
 section {
