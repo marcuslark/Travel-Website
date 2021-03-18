@@ -6,17 +6,18 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-section{
+body {
     position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
-    background: url(../img/booking.jpg);
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 100%;
 }
+
 header {
     position: absolute;
     top: 0;
@@ -121,4 +122,47 @@ header .toggle.active {
 }
 .navigation ul a:hover {
     color: rgba(0, 153, 255, 0.349)
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 50px;
+    grid-gap: 50px;
+}
+.start_img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (min-width: 1025px) {
+    section {
+        background-size: auto;
+    }
+    .content h2 {
+        font-size: 20vw;
+        line-height: 1em;
+        color: rgb(255, 255, 255);
+        font-family: 'Courgette', cursive;
+        text-shadow: 0 0 black;
+    }
+    section.grid-container{
+        width: 1000px;
+        margin: 20px auto;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto 50px;
+        grid-gap: 50px;
+    }
+    body {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100%;
+    }
 }
