@@ -6,28 +6,23 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body {
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35vh;
+    grid-gap: 50px;
+    text-align: center;
+}
+section {
     position: relative;
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-size: auto;
+    background: url(../img/booking.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100%;
-}
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
 }
 header {
     position: absolute;
@@ -123,17 +118,7 @@ header .toggle.active {
 .navigation ul a:hover {
     color: rgba(0, 153, 255, 0.349)
 }
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto 50px;
-    grid-gap: 50px;
-}
-.start_img {
-    max-width: 100%;
-    height: auto;
-}
-@media screen and (min-width: 1025px) {
+@media(max-width: 991px) {
     section {
         background-size: auto;
     }
@@ -144,25 +129,11 @@ main {
         font-family: 'Courgette', cursive;
         text-shadow: 0 0 black;
     }
-    section.grid-container{
-        width: 1000px;
-        margin: 20px auto;
-    }
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto 50px;
+    .grid-container{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35vh;
         grid-gap: 50px;
-    }
-    body {
-        position: relative;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        min-height: 100vh;
-        background-size: auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 100%;
+        text-align: center;
     }
 }
