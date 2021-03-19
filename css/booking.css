@@ -12,8 +12,8 @@ main ul {
 .grid-container{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20vh;
-    grid-gap: 220px;
+    grid-template-rows: 40vh;
+    grid-gap: 30px;
     text-align: center;
 }
 section {
