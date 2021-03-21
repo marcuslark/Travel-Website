@@ -1,33 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exotic Travel Destinations Design</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>index</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section>
-        <header>
-            <a href="#" class="logo">Travel</a>
-            <div class="toggle" onclick="toggleMenu();"></div>
-        </header>
-        <div class="content">
-            <h2>Book your<br>trip now!</h2>
-        </div>
-        <ul class="media">
-            <li><a href="#"><img src="img/facebook.png"></a></li>
-            <li><a href="#"><img src="img/instagram.png"></a></li>
-            <li><a href="#"><img src="img/twitter.png"></a></li>
-        </ul>
-        <nav class="navigation">
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="#">About</a>
-                <a href="booking.html">Booking</a>
-                <a href="#">Contact</a>
-            </ul>
-        </nav>
+   <header id="header">
+      <a href="#" class="logo">logo</a>
+      <ul>
+       <li><a href="#home">Home</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#destinations">Destinations</a></li>
+       <li><a href="#contact">Contact</a></li>
+    </ul>
+    </header>
+    <!-- Banner -->
+    <section class="banner" id="home">
+        <h2>Book Your<br>Trip Now!</h2>
     </section>
-    <script src="scripts/toggleMenu.js"></script>
-</body>
-</html>
+    <!-- About -->
+    <section class="sec" id="about">
+        <div class="content">
+        <div class="mxw800p">
+        <h3>Who Are We?</h3>
+        <p> We are a simple website that gives recommendations to exotic travel 
+            destinations. Our inspirations comes from our own experiences of exotic countries.
+        </p>
+         <a href="#" class="btn">Read Our Story</a>
+       </div>
+      </div>
+    </section>
+    <!-- Destinations -->
+    <section class="sec" id="destinations">
+        <div class="content">
+        <div class="mxw800p">
+        <h3>What Exotic Country Interests You?</h3>
+        <p>Here you have plenty of inspirations of where you would like to go</p>
+       </div>
+       <div class="destinations">
+        <div class="box">
+          <div class="bali">
+            <img src="img/balicircle.png">
+          </div>
+        <div class="content">
+            <h2>Bali</h2>
+            <p>Bali is known for it's sacred temples!
+                </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="bali">
+          <img src="img/maldievescircle.png">
+        </div>
+      <div class="content">
+          <h2>Maldieves</h2>
+          <p>The Maldieves are known for it's luxury huts built IN the water!
+              </p>
+      </div>
+    </div>
+    <div class="box">
+        <div class="phiphi">
+          <img src="img/phiphicircle.png">
+        </div>
+      <div class="content">
+          <h2>Phi Phi Island</h2>
+          <p>Phi Phi Island is a very beutiful but small island with a lot of activites to do.
+              It's usually full with tourists and most of them are very open-minded. There is also a place in Phi-phi
+              for families to stay, away from most of the tourists.
+              </p>
+      </div>
+    </div>
+    <div class="box">
+        <div class="philippines">
+          <img src="img/philippinescircle.png">
+        </div>
+      <div class="content">
+          <h2>Philippines</h2>
+          <p>The Philippines are known for it's beutiful jungle and exotic wild animals.
+              </p>
+      </div>
+    </div>
+     </div>
+    </section>
+    <script src="scripts/stickyScroll.js"></script>
+    </html>
