@@ -98,7 +98,7 @@ header .sticky ul li a {
     text-align: center;
     width: 100%;
 }
-.mxw800p {
+.rubics {
     max-width: 800xp;
     margin: 0 auto;
 }
@@ -125,13 +125,12 @@ p {
 .destinations {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
     max-width: 100%;
 }
 .contact {
     background: #000;
-
 }
 .contact h3,
 .contact p {
@@ -251,6 +250,7 @@ p {
     }
 header,
 header.sticky {
+    margin: auto;
     padding: 5px 50px;
     background: #fff;
 }
@@ -290,5 +290,8 @@ header ul li a {
     }
     .sec {
         padding: 100px 50px 50px 50px;
+    }
+    .row100 {
+        flex-direction: column;
     }
 }
