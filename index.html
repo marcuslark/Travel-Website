@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>index</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -9,11 +10,12 @@
    <header id="header">
       <a href="#" class="logo">logo</a>
       <ul>
-       <li><a href="#home">Home</a></li>
-       <li><a href="#about">About</a></li>
-       <li><a href="#destinations">Destinations</a></li>
-       <li><a href="#contact">Contact</a></li>
-    </ul>
+       <li><a href="#home" onclick="toggle()">Home</a></li>
+       <li><a href="#about" onclick="toggle()">About</a></li>
+       <li><a href="#destinations" onclick="toggle()">Destinations</a></li>
+       <li><a href="#contact" onclick="toggle()">Contact</a></li>
+      </ul>
+      <div class="toggle" onclick="toggle()"></div>
     </header>
     <!-- Banner -->
     <section class="banner" id="home">
@@ -24,9 +26,11 @@
         <div class="content">
         <div class="mxw800p">
         <h3>Who Are We?</h3>
+        <article>
         <p> We are a simple website that gives recommendations to exotic travel 
             destinations. Our inspirations comes from our own experiences of exotic countries.
         </p>
+        </article>
          <a href="#" class="btn">Read Our Story</a>
        </div>
       </div>
@@ -35,13 +39,15 @@
     <section class="sec" id="destinations">
         <div class="content">
         <div class="mxw800p">
+        <article>
         <h3>What Exotic Country Interests You?</h3>
         <p>Here you have plenty of inspirations of where you would like to go</p>
+      </article>
        </div>
        <div class="destinations">
         <div class="box">
           <div class="bali">
-            <img src="img/balicircle.png">
+            <img src="img/balicircle.png" alt="destinations">
           </div>
         <div class="content">
             <h2>Bali</h2>
@@ -51,7 +57,7 @@
       </div>
       <div class="box">
         <div class="bali">
-          <img src="img/maldievescircle.png">
+          <img src="img/maldievescircle.png" alt="destinations">
         </div>
       <div class="content">
           <h2>Maldieves</h2>
@@ -61,7 +67,7 @@
     </div>
     <div class="box">
         <div class="phiphi">
-          <img src="img/phiphicircle.png">
+          <img src="img/phiphicircle.png" alt="destinations">
         </div>
       <div class="content">
           <h2>Phi Phi Island</h2>
@@ -73,7 +79,7 @@
     </div>
     <div class="box">
         <div class="philippines">
-          <img src="img/philippinescircle.png">
+          <img src="img/philippinescircle.png" alt="destinations">
         </div>
       <div class="content">
           <h2>Philippines</h2>
@@ -83,5 +89,45 @@
     </div>
      </div>
     </section>
+    <!-- contact-->
+    <section class="sec contact" id="contact">
+      <div class="content">
+        <div class="mxw800p">
+          <h3>Do you have any questions?</h3>
+          <p>Please feel free to ask us anything!</p>
+        </div>
+        <div class="contactForm">
+          <form>
+            <div class="row100">
+              <div class="inputBx50">
+                <input type="text" name="" placeholder="Full Name">
+              </div>
+              <div class="inputBx50">
+                <input type="text" name="" placeholder="Email Address">
+              </div>
+            </div>
+            <div class="row100">
+              <div class="inputBx100">
+                <textarea placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="inputBx100">
+                <input type="submit" name="" value="Send">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="media">
+          <ul>
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+          </ul>
+        </div>
+        <p class="copyright">Developed & Designed By <a href="#">Marcus Lärk</a></p>
+      </div>
+    </section>
     <script src="scripts/stickyScroll.js"></script>
+    <script src="scripts/toggle.js"></script>
     </html>
