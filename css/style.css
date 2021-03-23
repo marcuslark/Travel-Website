@@ -219,6 +219,9 @@ p {
     display: none;
 }
 @media (max-width: 998px) {
+    .destinations {
+        grid-template-columns: 1fr;
+    }
     .toggle {
         display: block;
         position: relative;
