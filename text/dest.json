@@ -1,0 +1,32 @@
+[
+  {
+  "id":1,
+  "name":"Phi Phi Island",
+  "country":"Thailand",
+  "activities": [
+    "Scuba diving",
+    "Boat rides",
+    "Experience the famous View-Point"
+  ]
+},
+{
+  "id":2,
+  "name":"Bali",
+  "country":"Indonesia",
+  "activities": [
+    "Surfing in Kuta",
+    "Visit the Ulun Danu Temple",
+    "Visit the Bali treetop adventure park"
+  ]
+},
+{
+  "id":3,
+  "name":"Philippines",
+  "country":"Philippines",
+  "activities": [
+    "Visit the beautiful beach of Boracay",
+    "Go see the very beautiful Banaue Rice Terraces",
+    "Check out the active Mayon Volcano"
+  ]
+ }
+]

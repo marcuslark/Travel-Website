@@ -129,6 +129,9 @@ p {
     grid-gap: 100px;
     max-width: 100%;
 }
+.output ul {
+    list-style: none;
+}
 .contact {
     background: #000;
 }
