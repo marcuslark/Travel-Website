@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Exotic Travel Destinations</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header id="header">
+      <a href="#" class="logo"><img src="img/travel1.png" alt="logo for travel">
+      </a>
+      <ul>
+       <li><a href="#home" onclick="toggle()">Home</a></li>
+       <li><a href="#about" onclick="toggle()">About</a></li>
+       <li><a href="#destinations" onclick="toggle()">Destinations</a></li>
+       <li><a href="#contact" onclick="toggle()">Contact</a></li>
+      </ul>
+      <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <!-- Banner -->
+    <section class="banner" id="home">
+        <h2>Book Your<br>Trip Now!</h2>
+    </section>
+    <!-- About -->
+    <section class="sec" id="about">
+        <div class="content">
+        <div class="rubics">
+        <h3>Who Are We?</h3>
+        <article>
+        <p> We are a simple website that gives recommendations to exotic travel 
+            destinations. Our inspirations comes from our own experiences of exotic countries.
+        </p>
+        </article>
+         <button class="btn" onclick="showHide('dest')" id="getDest">Read Our Recommendations</button>
+         <div class="output" style="display: none;" id="output"></div>
+       </div>
+      </div>
+    </section>
+    <!-- Destinations -->
+    <section class="sec" id="destinations">
+        <div class="content">
+        <div class="rubics">
+        <article>
+        <h3>What Exotic Country Interests You?</h3>
+        <p>Here you have plenty of inspirations of where you would like to go</p>
+      </article>
+       </div>
+       <div class="destinations">
+        <div class="box">
+          <div class="bali">
+            <img src="img/balicircle.png" alt="destinations">
+          </div>
+        <div class="content">
+            <h2>Bali</h2>
+            <p>Bali is known for it's sacred temples!
+                </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="bali">
+          <img src="img/maldievescircle.png" alt="destinations">
+        </div>
+      <div class="content">
+          <h2>Maldieves</h2>
+          <p>The Maldieves are known for it's luxury huts built IN the water!
+              </p>
+      </div>
+    </div>
+    <div class="box">
+        <div class="phiphi">
+          <img src="img/phiphicircle.png" alt="destinations">
+        </div>
+      <div class="content">
+          <h2>Phi Phi Island</h2>
+          <p>Phi Phi Island is a very beautiful but small island located close to phuket, Thailand. There is plenty
+             of activities to do there!
+              </p>
+      </div>
+    </div>
+    <div class="box">
+        <div class="philippines">
+          <img src="img/philippinescircle.png" alt="destinations">
+        </div>
+      <div class="content">
+          <h2>Philippines</h2>
+          <p>The Philippines are known for it's beautiful jungle and exotic wild animals.
+              </p>
+      </div>
+    </div>
+     </div>
+    </section>
+    <!-- contact-->
+    <section class="sec contact" id="contact">
+      <div class="content">
+        <div class="mxw800p">
+          <h3>Do you have any questions?</h3>
+          <p>Please feel free to ask us anything!</p>
+        </div>
+        <div class="contactForm">
+          <form class="form">
+            <div class="row100">
+              <div class="inputBx50">
+                <input type="text" id="name" name="" placeholder="Full Name">
+              </div>
+              <div class="inputBx50">
+                <input type="text" id="email" name="" placeholder="Email Address">
+              </div>
+            </div>
+            <div class="row100">
+              <div class="inputBx100">
+                <textarea placeholder="Message" id="message"></textarea>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="inputBx100">
+                <input type="submit" name="" value="Send">
+              </div>
+            </div>
+          </form>
+        </div>
+        <button class="btn" onclick="showHide('messages')" id="getMessages">Read Your Messages</button>
+         <div class="outputMessages" style="display: none;" id="outputMessages"></div>
+        <div class="media">
+          <ul>
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+          </ul>
+        </div>
+        <p class="copyright">Developed & Designed By <a href="#">Marcus Lärk</a></p>
+      </div>
+    </section>
+    <script src="scripts/stickyScroll.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/showhide.js"></script>
+    <script src="scripts/fetch.js"></script>
+    <script src="scripts/storage.js"></script>
+    </html>
