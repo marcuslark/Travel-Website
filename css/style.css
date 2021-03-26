@@ -129,8 +129,12 @@ p {
     grid-gap: 100px;
     max-width: 100%;
 }
-.output ul {
+.output ul{
     list-style: none;
+}
+.outputMessages ul {
+    list-style: none;
+    color: #fff;
 }
 .contact {
     background: #000;

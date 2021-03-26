@@ -32,8 +32,8 @@
             destinations. Our inspirations comes from our own experiences of exotic countries.
         </p>
         </article>
-         <button class="btn" onclick="showHide()" id="getDest">Read Our Recommendations</button>
-         <div class="output" id="output"></div>
+         <button class="btn" onclick="showHide('dest')" id="getDest">Read Our Recommendations</button>
+         <div class="output" style="display: none;" id="output"></div>
        </div>
       </div>
     </section>
@@ -73,7 +73,7 @@
         </div>
       <div class="content">
           <h2>Phi Phi Island</h2>
-          <p>Phi Phi Island is a very beutiful but small island located close to phuket, Thailand. There is plenty
+          <p>Phi Phi Island is a very beautiful but small island located close to phuket, Thailand. There is plenty
              of activities to do there!
               </p>
       </div>
@@ -98,18 +98,18 @@
           <p>Please feel free to ask us anything!</p>
         </div>
         <div class="contactForm">
-          <form>
+          <form class="form">
             <div class="row100">
               <div class="inputBx50">
-                <input type="text" name="" placeholder="Full Name">
+                <input type="text" id="name" name="" placeholder="Full Name">
               </div>
               <div class="inputBx50">
-                <input type="text" name="" placeholder="Email Address">
+                <input type="text" id="email" name="" placeholder="Email Address">
               </div>
             </div>
             <div class="row100">
               <div class="inputBx100">
-                <textarea placeholder="Message"></textarea>
+                <textarea placeholder="Message" id="message"></textarea>
               </div>
             </div>
             <div class="row100">
@@ -119,6 +119,8 @@
             </div>
           </form>
         </div>
+        <button class="btn" onclick="showHide('messages')" id="getMessages">Read Your Messages</button>
+         <div class="outputMessages" style="display: none;" id="outputMessages"></div>
         <div class="media">
           <ul>
             <li><a href="#"><img src="img/facebook.png"></a></li>
@@ -133,4 +135,5 @@
     <script src="scripts/toggle.js"></script>
     <script src="scripts/showhide.js"></script>
     <script src="scripts/fetch.js"></script>
+    <script src="scripts/storage.js"></script>
     </html>
