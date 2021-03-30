@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <title>Exotic Travel Destinations</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="#">
 </head>
 <body>
    <header id="header">
-      <a href="#" class="logo"><img src="img/travel1.png" alt="logo for travel">
+      <a href="snake.html" class="logo"><img src="img/travel1.png" alt="logo for travel">
       </a>
       <ul>
        <li><a href="#home" onclick="toggle()">Home</a></li>
        <li><a href="#about" onclick="toggle()">About</a></li>
        <li><a href="#destinations" onclick="toggle()">Destinations</a></li>
        <li><a href="#contact" onclick="toggle()">Contact</a></li>
+       <li><a href="snake.html" onclick="toggle()">Play Snake!</a></li>
       </ul>
       <div class="toggle" onclick="toggle()"></div>
     </header>
@@ -29,7 +31,7 @@
         <h3>Who Are We?</h3>
         <article>
         <p> We are a simple website that gives recommendations to exotic travel 
-            destinations. Our inspirations comes from our own experiences of exotic countries.
+            destinations.<br> Our inspirations comes from our own experiences of exotic countries.
         </p>
         </article>
          <button class="btn" onclick="showHide('dest')" id="getDest">Read Our Recommendations</button>
@@ -128,7 +130,7 @@
             <li><a href="#"><img src="img/twitter.png"></a></li>
           </ul>
         </div>
-        <p class="copyright">Developed & Designed By <a href="#">Marcus Lärk</a></p>
+        <p class="copyright">Developed & Designed By <a href="https://github.com/marcuslark">Marcus Lärk</a></p>
       </div>
     </section>
     <script src="scripts/stickyScroll.js"></script>
